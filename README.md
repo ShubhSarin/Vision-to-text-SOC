@@ -114,3 +114,53 @@
 - Transfer learning implementation
 - GPU acceleration
 - Model evaluation and visualization
+
+### Text Classification
+#### Text Classification Project
+
+- Implemented in `test_classification.ipynb`
+- Utilizes PyTorch and TorchText for NLP tasks
+- Dataset loading and preprocessing:
+  - Tokenization and vocabulary creation
+  - Padding and batching of text data
+- Model architecture:
+  - Embedding layer for word representations
+  - LSTM-based sequence modeling
+  - Fully connected output layer for classification
+- Training and evaluation:
+  - CrossEntropyLoss for multi-class classification
+  - Adam optimizer for efficient training
+  - Accuracy and loss tracking on validation set
+- Visualization:
+  - Training/validation loss curves
+  - Confusion matrix for prediction analysis
+- Key techniques:
+  - Handling variable-length sequences
+  - Early stopping for overfitting prevention
+  - Use of GPU acceleration for faster training
+- Results:
+  - Achieved high accuracy on test data
+  - Demonstrated effective text classification on sample dataset
+
+### Image Captioning
+#### Image Captioning Project
+- Implemented in `final-project.ipynb`
+- Dataset: Used Flickr8k for image-caption pairs
+- Data preprocessing: Image resizing, normalization, and caption tokenization
+- Model architecture:
+  - CNN encoder (ResNet50) extracts image features
+  - LSTM decoder generates captions from encoded features
+  - Embedding layer for word representations
+  - Attention mechanism for improved caption generation
+- Training:
+  - CrossEntropyLoss for sequence prediction
+  - Adam optimizer with learning rate scheduling
+  - Teacher forcing for faster convergence
+  - Early stopping based on validation loss
+- Evaluation:
+  - BLEU score for caption quality assessment
+  - Visualization of generated captions on sample images
+  - Analysis of attention weights for interpretability
+- Results:
+  - Generated accurate and descriptive captions for test images
+  - Demonstrated effective use of deep learning for image-to-text tasks
